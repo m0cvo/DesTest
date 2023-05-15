@@ -19,10 +19,11 @@
             </TextBlock>
             <Button x:Name="Btn1" Content="Click me"
         Click="Btn1Click" ClickMode="Press"
-        Margin="5,5,5,5" Width="150" 
+        Margin="32, 327, 0, 0" Width="150" 
         HorizontalAlignment="Left" 
           Foreground="Blue"/>
         <Button x:Name="CloseBtn" Content="Close"
+        HorizontalAlignment="Center" Margin="0, 46, 0, 0"
         Click="CloseBtnClick" ClickMode="Press"
         Foreground="Red" />
         </Grid>
