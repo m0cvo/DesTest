@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "DesTest (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "DesTest (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
