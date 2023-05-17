@@ -10,22 +10,24 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <!--<Button x:Name="myButton" Click="myButton_Click">Click Me</Button>-->
+    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" >
         <Grid Padding="40">
-            <TextBlock>
-            <Run FontSize="24" Foreground="#FFFC5185">Get Started with XAML Studio</Run><LineBreak/>
-            <Run> Modify this text below to see a live preview.</Run>
+            <TextBlock Margin="32, 50, 0, 0" VerticalAlignment="Top">
+            <Run FontSize="24" Foreground="#FFFC5185">WinUI3 with XAML demonstration</Run><LineBreak/>
+            <Run>Copyright (c) N.Booth for Mogpie 2023</Run><LineBreak/>
             </TextBlock>
             <Button x:Name="Btn1" Content="Click me"
-        Click="Btn1Click" ClickMode="Press"
-        Margin="32, 327, 0, 0" Width="150" 
-        HorizontalAlignment="Left" 
-          Foreground="Blue"/>
-        <Button x:Name="CloseBtn" Content="Close"
-        HorizontalAlignment="Center" Margin="0, 46, 0, 0"
-        Click="CloseBtnClick" ClickMode="Press"
-        Foreground="Red" />
+                Click="Btn1Click" ClickMode="Press"
+                HorizontalAlignment="Left"
+                Margin="32,0,0,0" Width="150"  
+                Foreground="Blue"/>
+            <Button x:Name="CloseBtn" Content="Close"
+                HorizontalAlignment="Left" Margin="200, 0, 0, 0"
+                Click="CloseBtnClick" ClickMode="Press"
+                Foreground="Red" />
+            <TextBox HorizontalAlignment="left" 
+                Margin="300, 0,0,0" Height="10" Width="150" PlaceholderText="Enter your name">
+            </TextBox>
         </Grid>
     </StackPanel>
 </Window>
