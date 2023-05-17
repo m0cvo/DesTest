@@ -17,6 +17,7 @@ using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Popups;
 
+
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
 
@@ -32,14 +33,13 @@ namespace DesTest
             this.InitializeComponent();
         }
 
-        //private void myButton_Click(object sender, RoutedEventArgs e)
-        //{
-        //    myButton.Content = "Clicked";
-        //}
-
-        private void Btn1Click(object sender, RoutedEventArgs e)
+        private async void Btn1Click(object sender, RoutedEventArgs e)
         {
-            Btn1.Content = "Clicked";
+            string name = NameBox.Text.ToString();
+            var showDialog = new Windows.UI.Popups.MessageDialog("Hello " + name);
+            WinRT.Interop.InitializeWithWindow.Initialize(showDialog,
+                WinRT.Interop.WindowNative.GetWindowHandle(this));
+            await showDialog.ShowAsync();
         }
 
         private void CloseBtnClick(object sender, RoutedEventArgs e)

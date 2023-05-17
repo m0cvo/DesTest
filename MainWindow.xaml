@@ -16,17 +16,17 @@
             <Run FontSize="24" Foreground="#FFFC5185">WinUI3 with XAML demonstration</Run><LineBreak/>
             <Run>Copyright (c) N.Booth for Mogpie 2023</Run><LineBreak/>
             </TextBlock>
-            <Button x:Name="Btn1" Content="Click me"
+            <Button x:Name="Btn1" Content="Enter"
                 Click="Btn1Click" ClickMode="Press"
                 HorizontalAlignment="Left"
-                Margin="32,0,0,0" Width="150"  
+                Margin="200,0,0,0" Width="150"  
                 Foreground="Blue"/>
             <Button x:Name="CloseBtn" Content="Close"
-                HorizontalAlignment="Left" Margin="200, 0, 0, 0"
+                HorizontalAlignment="Left" Margin="370, 0, 0, 0"
                 Click="CloseBtnClick" ClickMode="Press"
                 Foreground="Red" />
-            <TextBox HorizontalAlignment="left" 
-                Margin="300, 0,0,0" Height="10" Width="150" PlaceholderText="Enter your name">
+            <TextBox x:Name="NameBox" HorizontalAlignment="left" 
+                Margin="32, 0,0,0" Height="10" Width="150" PlaceholderText="Enter your name">
             </TextBox>
         </Grid>
     </StackPanel>
