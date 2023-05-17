@@ -16,6 +16,8 @@
             <Run FontSize="24" Foreground="#FFFC5185">WinUI3 with XAML demonstration</Run><LineBreak/>
             <Run>Copyright (c) N.Booth for Mogpie 2023</Run><LineBreak/>
             </TextBlock>
+            
+            <!-- x:Name is used for object binding to the code behind. -->
             <Button x:Name="Btn1" Content="Enter"
                 Click="Btn1Click" ClickMode="Press"
                 HorizontalAlignment="Left"
