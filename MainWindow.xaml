@@ -10,7 +10,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" >
+    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Background="LightBlue">
         <Grid Padding="40">
             <TextBlock Margin="32, 50, 0, 0" VerticalAlignment="Top">
             <Run FontSize="24" Foreground="#FFFC5185">WinUI3 with XAML demonstration</Run><LineBreak/>
